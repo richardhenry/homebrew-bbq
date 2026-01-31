@@ -5,18 +5,18 @@ class Bbq < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/richardhenry/bbq/releases/download/v0.1.4/bbq-v0.1.4-aarch64-apple-darwin.tar.gz"
-      sha256 "62383b6a4f8f4d10b8312e7aa867c4148ca4bfc2323a7bbfe588f84ce078ca5d"
+      url "https://github.com/richardhenry/bbq/releases/download/v0.1.5/bbq-v0.1.5-aarch64-apple-darwin.tar.gz"
+      sha256 "84a7eefb70e1fcb625bb53fa9a652f28094386bf5546fae52e1bd4c2de3070f1"
     else
-      url "https://github.com/richardhenry/bbq/releases/download/v0.1.4/bbq-v0.1.4-x86_64-apple-darwin.tar.gz"
-      sha256 "b0baa81a599cbc2969936f16be0f1a7aafe4c26da5b161624882b4906cee53fd"
+      url "https://github.com/richardhenry/bbq/releases/download/v0.1.5/bbq-v0.1.5-x86_64-apple-darwin.tar.gz"
+      sha256 "efc7ba1af7cc7e6fb7cb1b75c29cd219a03fa4ecc365578ef05d40719d497539"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/richardhenry/bbq/releases/download/v0.1.4/bbq-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "f910b7b934e6a6603e51ea656113d38b09e3f02863c1edf6a75b0a15d69b0bf9"
+      url "https://github.com/richardhenry/bbq/releases/download/v0.1.5/bbq-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "f3c6403bd518aa37b17475f5a09b8c20b01bf67bc630d00d24cb8201e6cd63ac"
     else
       odie "bbq is not available for Linux ARM"
     end
